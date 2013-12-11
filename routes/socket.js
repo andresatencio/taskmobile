@@ -7,9 +7,9 @@ module.exports = function ( io ) {
 		setInterval(function(){
 			socket.emit('send:saludos', {hola: 'Hola Andres ' + i})
 			i ++ ;
-		}, 50)
+		}, 5000)
 
-		
+
 	});
 
 

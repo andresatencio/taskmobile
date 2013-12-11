@@ -6,6 +6,8 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 
+app.passport = require('./routes/passport');
+
 // Configuracion de app Express
 require('./config')(app, express)
 

@@ -12,6 +12,8 @@ module.exports = function ( app, express ) {
 		app.use(express.methodOverride());
 		app.use(express.cookieParser('your secret here'));
 		app.use(express.session());
+		app.use(app.passport.initialize());
+  		app.use(app.passport.session());
 		app.use(app.router);
 		app.use(express.static(path.join(__dirname, './../public')));
 	});
