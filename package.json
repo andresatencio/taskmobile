@@ -9,6 +9,7 @@
     "express": "3.0.0",
     "ejs": "*",
     "mongoose": "3.6.16",
-    "colors": "*" 
+    "colors": "*" ,
+    "socket.io": "*"
   }
 }

@@ -1,8 +1,12 @@
 
-/*
- * GET home page.
- */
+module.exports = function ( app ) {
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
-};
+
+	// Rutas
+	app.get('/', function (req, res) {
+		res.render('admin')
+	})
+
+
+
+}
